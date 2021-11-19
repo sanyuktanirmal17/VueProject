@@ -48,22 +48,22 @@ data () {
             }
   }
 },
-  mounted: function()
-{
-  fetch('http://localhost:3000/sampletable', 
-  {
-    method: 'get'
-  })
-  .then((response) => {
-    //  console.log(response.json())
-    return response.json()
-  })
-  .then ((jsonData) => {
+//   mounted: function()
+//  {
+//   fetch('http://localhost:3000/sampletable', 
+//   {
+//     method: 'get'
+//   })
+//   .then((response) => {
+//     //  console.log(response.json())
+//     return response.json()
+//   })
+//   .then ((jsonData) => {
   
-    this.results = jsonData
-    console.log(this.results[0].firstname)
-  })
-  },
+//     this.results = jsonData
+//     console.log(this.results[0].firstname)
+//   })
+//   },
 
 // addData(){
 //   fetch('http://localhost:3000/sampletable', 
